@@ -4,6 +4,7 @@ br/com/umdesenvolvedor/zagorFX/utils/PasswordDialog.class
 br/com/umdesenvolvedor/zagorFX/interfaces/ITelaObservable.class
 br/com/umdesenvolvedor/zagorFX/utils/TelaConfigSingleton.class
 br/com/umdesenvolvedor/zagorFX/utils/MaskFieldUtil$6.class
+br/com/umdesenvolvedor/zagorFX/interfaces/ITela.class
 br/com/umdesenvolvedor/zagorFX/utils/MaskFieldUtil$12.class
 br/com/umdesenvolvedor/zagorFX/utils/MaskFieldUtil$2.class
 br/com/umdesenvolvedor/zagorFX/relatorio/RelatorioGerar$1.class
@@ -14,7 +15,6 @@ br/com/umdesenvolvedor/zagorFX/utils/MaskFieldUtil$5.class
 br/com/umdesenvolvedor/zagorFX/utils/ListaImpressoras.class
 br/com/umdesenvolvedor/zagorFX/utils/Propriedades.class
 br/com/umdesenvolvedor/zagorFX/utils/MaskFieldUtil$13.class
-br/com/umdesenvolvedor/zagorFX/tela/TelaTransicaoObservable.class
 br/com/umdesenvolvedor/zagorFX/utils/MaskFieldUtil$4$1.class
 br/com/umdesenvolvedor/zagorFX/utils/MaskFieldUtil$3.class
 br/com/umdesenvolvedor/zagorFX/tela/FxmlPrepara.class

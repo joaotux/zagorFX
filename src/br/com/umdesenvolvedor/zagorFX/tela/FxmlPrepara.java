@@ -22,7 +22,7 @@ public class FxmlPrepara {
 		}
 
 		scene = new Scene(parent, largura, altura);
-		scene.getStylesheets().add(estiloCss);
+//		scene.getStylesheets().add(estiloCss);
 
 		return scene;
 	}
@@ -33,8 +33,6 @@ public class FxmlPrepara {
 	
 	public FXMLLoader preparaFxml(String fxml, Callback<Class<?>, Object> controllerSpring) {
 		fxmlLoader = new FXMLLoader(getClass().getClassLoader().getResource(fxml));
-		System.out.println("============ caminho fxml 01 " + fxmlLoader.getNamespace());
-		System.out.println("============ caminho fxml 02 " + fxmlLoader.toString());
 		fxmlLoader.setControllerFactory(controllerSpring);
 		
 		return fxmlLoader;
