@@ -15,7 +15,9 @@ br/com/umdesenvolvedor/zagorFX/utils/MaskFieldUtil$5.class
 br/com/umdesenvolvedor/zagorFX/utils/ListaImpressoras.class
 br/com/umdesenvolvedor/zagorFX/utils/Propriedades.class
 br/com/umdesenvolvedor/zagorFX/utils/MaskFieldUtil$13.class
+br/com/umdesenvolvedor/zagorFX/tela/Tela.class
 br/com/umdesenvolvedor/zagorFX/utils/MaskFieldUtil$4$1.class
+br/com/umdesenvolvedor/zagorFX/tela/TelaNavegacaoObservable.class
 br/com/umdesenvolvedor/zagorFX/utils/MaskFieldUtil$3.class
 br/com/umdesenvolvedor/zagorFX/tela/FxmlPrepara.class
 br/com/umdesenvolvedor/zagorFX/utils/NumeroUtils.class
