@@ -10,6 +10,9 @@ import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
+import org.joda.time.DateTime;
+import org.joda.time.Days;
+
 public class DataTimeUtils {
 
 	public static Date stringToDate(String data) {
@@ -78,5 +81,11 @@ public class DataTimeUtils {
 			horas = "00:00:00";
 
 		return LocalTime.parse(horas);
+	}
+	
+	public static int diasEntreAsDatas(LocalDate dataInicial, LocalDate dataFinal) {
+		DateTime inicio = new DateTime(dataInicial.getYear(), dataInicial.getMonth().getValue(), dataInicial.getDayOfMonth(), 0, 0);
+		DateTime fim = new DateTime(dataFinal.getYear(), dataFinal.getMonth().getValue(), dataFinal.getDayOfMonth(), 0, 0);
+		return Days.daysBetween(inicio, fim).getDays();
 	}
 }
