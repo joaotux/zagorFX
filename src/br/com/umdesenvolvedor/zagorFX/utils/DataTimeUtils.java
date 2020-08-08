@@ -9,6 +9,7 @@ import java.time.LocalTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 import org.joda.time.DateTime;
 import org.joda.time.Days;
@@ -87,5 +88,27 @@ public class DataTimeUtils {
 		DateTime inicio = new DateTime(dataInicial.getYear(), dataInicial.getMonth().getValue(), dataInicial.getDayOfMonth(), 0, 0);
 		DateTime fim = new DateTime(dataFinal.getYear(), dataFinal.getMonth().getValue(), dataFinal.getDayOfMonth(), 0, 0);
 		return Days.daysBetween(inicio, fim).getDays();
+	}
+	
+	public static LocalDate incrementaData(int campo, int valor, LocalDate dataOrigem)
+	{
+		GregorianCalendar gcal = new GregorianCalendar();
+		
+		try
+		{
+			Date data = Date.from(dataOrigem.atStartOfDay(ZoneId.systemDefault()).toInstant());
+			gcal.setTime(data);
+			gcal.add(campo, valor);
+		}
+		catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+		
+		return dateParaLocalDate(new Date(gcal.getTime().getTime()));
+	}
+	
+	public static LocalDate dateParaLocalDate(Date date) {
+		return date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
 	}
 }
