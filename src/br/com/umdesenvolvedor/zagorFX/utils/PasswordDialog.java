@@ -12,7 +12,7 @@ import javafx.scene.layout.Priority;
 public class PasswordDialog extends Dialog<String> {
   private PasswordField passwordField;
 
-  public PasswordDialog() {
+  public PasswordDialog(String titulo) {
     setTitle("Autenticação");
     setHeaderText("Informe a senha.");
 
@@ -40,7 +40,9 @@ public class PasswordDialog extends Dialog<String> {
     });
   }
 
-  public PasswordField getPasswordField() {
+
+
+public PasswordField getPasswordField() {
     return passwordField;
   }
 }
