@@ -16,7 +16,6 @@ public class TelaNavegacaoObservable {
 				listner.remove(i);
 			}
 		}
-
 		listner.add(dados);
 	}
 

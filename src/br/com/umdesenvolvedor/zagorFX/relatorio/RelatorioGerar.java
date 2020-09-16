@@ -24,7 +24,7 @@ public class RelatorioGerar extends JDialog {
 
 	TelaConfigSingleton tela = TelaConfigSingleton.getInstance();
 
-	private String contexto = Propriedades.getPropriedades("dados.properties").getProperty("dir_relatorios");
+	private String contexto = Propriedades.getPropriedades().getProperty("dir_relatorios");
 	private int telaLargura = tela.getTelaLargura();
 	private int telaAltura = tela.getTelaAltura();
 
