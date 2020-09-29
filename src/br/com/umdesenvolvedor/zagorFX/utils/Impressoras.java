@@ -3,8 +3,7 @@ package br.com.umdesenvolvedor.zagorFX.utils;
 import javax.print.PrintService;
 import javax.print.PrintServiceLookup;
 
-public class ListaImpressoras {
-
+public class Impressoras {
 	private PrintService[] services = null;
 
 	public PrintService[] getImpressoras() {
@@ -14,7 +13,6 @@ public class ListaImpressoras {
 		for (PrintService ps : services) {
 			System.out.println("Localizada no PC ~> " + ps.getName());
 		}
-
 		return services;
 	}
 
@@ -23,7 +21,7 @@ public class ListaImpressoras {
 	}
 
 	public static void main(String[] args) {
-		ListaImpressoras impressoras = new ListaImpressoras();
+		Impressoras impressoras = new Impressoras();
 		impressoras.getImpressoras();
 	}
 }

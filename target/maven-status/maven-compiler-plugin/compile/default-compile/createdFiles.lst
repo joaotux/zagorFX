@@ -1,4 +1,3 @@
-br/com/umdesenvolvedor/zagorFX/utils/Mensagens.class
 br/com/umdesenvolvedor/zagorFX/utils/MaskFieldUtil$4.class
 br/com/umdesenvolvedor/zagorFX/utils/PasswordDialog.class
 br/com/umdesenvolvedor/zagorFX/interfaces/ITelaObservable.class
@@ -12,8 +11,8 @@ br/com/umdesenvolvedor/zagorFX/utils/MaskFieldUtil.class
 br/com/umdesenvolvedor/zagorFX/utils/DataTimeUtils.class
 br/com/umdesenvolvedor/zagorFX/utils/MaskFieldUtil$8.class
 br/com/umdesenvolvedor/zagorFX/utils/MaskFieldUtil$5.class
-br/com/umdesenvolvedor/zagorFX/utils/ListaImpressoras.class
 br/com/umdesenvolvedor/zagorFX/utils/Propriedades.class
+br/com/umdesenvolvedor/zagorFX/utils/StringUtils.class
 br/com/umdesenvolvedor/zagorFX/utils/MaskFieldUtil$13.class
 br/com/umdesenvolvedor/zagorFX/tela/Tela.class
 br/com/umdesenvolvedor/zagorFX/utils/MaskFieldUtil$4$1.class
@@ -25,6 +24,7 @@ br/com/umdesenvolvedor/zagorFX/utils/MaskFieldUtil$11.class
 br/com/umdesenvolvedor/zagorFX/utils/MaskFieldUtil$7.class
 br/com/umdesenvolvedor/zagorFX/utils/MaskFieldUtil$10.class
 br/com/umdesenvolvedor/zagorFX/utils/CriptografiaMD5.class
+br/com/umdesenvolvedor/zagorFX/utils/Impressoras.class
 br/com/umdesenvolvedor/zagorFX/relatorio/RelatorioGerar.class
 br/com/umdesenvolvedor/zagorFX/utils/MaskFieldUtil$1.class
 br/com/umdesenvolvedor/zagorFX/utils/Alerta.class
