@@ -20,7 +20,7 @@ public class NumeroUtils {
 
 		try {
 
-			dValor = valor.isEmpty() ? 0.0 : format.parse(valor).doubleValue();
+			dValor = valor.isEmpty() ? 0.0 : format.parse(valor.replace("R$ ", "")).doubleValue();
 
 		} catch (ParseException e) {
 			e.printStackTrace();

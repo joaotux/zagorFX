@@ -37,7 +37,7 @@ public class RelatorioGerar extends JDialog {
 	private static final long serialVersionUID = 6775897406151070520L;
 
 	TelaConfigSingleton tela = TelaConfigSingleton.getInstance();
-	private String contexto = Propriedades.getPropriedades().getProperty("dir_relatorios");
+	private String contexto = Propriedades.getPropriedades("dados.properties").getProperty("dir_relatorios");
 	private int telaLargura = tela.getTelaLargura();
 	private int telaAltura = tela.getTelaAltura();
 
@@ -135,9 +135,7 @@ public class RelatorioGerar extends JDialog {
 	}
 
 	private void imprime(JasperPrint jp, String impressora) {
-		// TODO Auto-generated method stub
 		PrintRequestAttributeSet printRequestAttributeSet = new HashPrintRequestAttributeSet();
-		// printRequestAttributeSet.add(MediaSizeName.ISO_A4); //setting page size
 		printRequestAttributeSet.add(new Copies(1));
 
 		PrinterName printerName = new PrinterName(impressora, null); // gets printer

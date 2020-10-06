@@ -278,7 +278,7 @@ public abstract class MaskFieldUtil {
 	 * @param textField TextField.
 	 * @param length    Tamanho do campo.
 	 */
-	private static void maxField(final TextField textField, final Integer length) {
+	public static void maxField(final TextField textField, final Integer length) {
 		textField.textProperty().addListener(new ChangeListener<String>() {
 			@Override
 			public void changed(ObservableValue<? extends String> observableValue, String oldValue, String newValue) {
